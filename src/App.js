@@ -1,6 +1,6 @@
 import NavBar from "./Containers/NavBar/NavBar";
 import Main from "./Containers/Main/Main";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import SearchBar from "./Components/SearchBar";
 import NumResults from "./Components/NumResults";
 import Box from "./Components/Box";

@@ -75,6 +75,7 @@ export default function MovieDetails({
           setMovie(data);
           //   setError("");
         } catch (error) {
+          setError(error.message);
           //   if (error.name !== "AbortError") setError(error.message);
         } finally {
           setIsLoading(false);
