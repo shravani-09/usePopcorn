@@ -73,7 +73,7 @@ export default function MovieDetails({
           if (data.Response === "False") throw new Error("Movie Not Found");
 
           setMovie(data);
-          //   setError("");
+          setError("");
         } catch (error) {
           setError(error.message);
           //   if (error.name !== "AbortError") setError(error.message);
@@ -113,6 +113,7 @@ export default function MovieDetails({
               <p>
                 {released} &bull; {runtime}
               </p>
+              <p style={{ display: "none" }}>{error}</p>
               <p>{genre}</p>
               <p>
                 <span>⭐</span>
